@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useMemo } from "react";
 
-function rand(min, max) {
+function rand(min:number, max:number) {
     return min + Math.random() * (max - min);
 }
 
