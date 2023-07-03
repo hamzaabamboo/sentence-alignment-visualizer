@@ -1,7 +1,5 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-
-const inter = Inter({ subsets: ['latin'] })
+import { AppWrapper } from "@/components/AppWrapper";
+import "./style.css";
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,8 +12,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
-    </html>
+      <html lang="en">
+        <body>
+          <nav><a href="/">Sentence Alignment Visualizer</a></nav>
+          <div className="main">
+            <AppWrapper>{children}</AppWrapper>
+          </div>
+        </body>
+      </html>
   )
 }

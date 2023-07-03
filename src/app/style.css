@@ -1,0 +1,21 @@
+* {
+    font-family: sans-serif;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 16px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.main {
+    padding: 0px 12px;
+    margin: 0 auto;
+    text-align: justify;
+    max-width: min(100vw, 1500px);
+}
