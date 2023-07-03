@@ -3,7 +3,7 @@ import { readFile } from "fs/promises";
 import { join } from "path";
 
 const getData = async (id: string) => {
-const path = join(__dirname,"../../../../../data/data")
+const path = join(__dirname,"../../../../../data")
 const files = id === "000" ? ["english.txt", "japanese.txt", "align.txt"] : ["english-" + id +'.txt', "japanese-" + id +'.txt', "align-" + id + ".txt"]
   const data = files.map(f => readFile(join(path,f)).then(f => f.toString()))
   return await Promise.all(data)
